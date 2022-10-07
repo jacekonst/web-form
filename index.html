@@ -1,0 +1,49 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Contact Us</title>
+  </head>
+  <body onload='document.form1.email.focus()' onload='document.form1.message.focus()'>    
+    <div class="container">
+        <header>GET IN TOUCH</header>
+        <form name="form1" action="#">
+            <div class="fields">
+                <div class="input-field">
+                    <label>First name*</label>
+                    <input type="text" placeholder="Olivia" required>
+                </div>
+                <div class="input-field">
+                    <label>Last name</label>
+                    <input type="text" placeholder="Wilson">
+                </div>
+                <div class="input-field">
+                    <label>Email address*</label>
+                    <input type="text" name="email" placeholder="hello@reallygreatsite.com" required>
+                </div>
+                <div class="select-box">
+                    <label>Project Type</label>
+                    <select name="project-type">
+                        <option value="Select one">Select one</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="message-box">
+                <label>Message*</label>
+                <input type="text" name="message" placeholder="Type your message here" required>
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit" onclick="ValidateEmail(document.form1.email);stringlength(document.form1.message,200)">
+            </div>
+        </form>
+       </div>
+
+       <script src="scripts.js"></script>
+    </body>
+</html>
