@@ -51,7 +51,7 @@ form .fields .input-field{
     display: flex;
     margin: 20px 0 12px 0;
     width: calc(100% / 2 -20px);
-    flex-direction: column;
+    flex-direction:column;
 }
 
 .input-field input{
@@ -112,4 +112,89 @@ form .button input{
     background-color: rgb(251, 234, 211);
     font-size: 20px;
     font-weight: 500;
+}
+
+.alert{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.alert .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    display: none;
+}
+
+.alert .error{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    display: none;
+}
+
+.input-field i{
+    position: relative;
+    bottom: 20px;
+    left: 155px;
+    visibility: hidden;
+}
+
+.input-field small{
+    position: relative;
+    bottom: 10px;
+    visibility: hidden;
+}
+
+.message-box i{
+    position: relative;
+    bottom: 20px;
+    left: 828px;
+    flex-direction: row;
+    visibility: hidden;
+}
+
+.message-box small{
+    position: relative;
+    bottom: 10px;
+    visibility: hidden;
+}
+
+.input-field.invalid input{
+    border-color: #e74c3c;
+}
+
+.input-field.invalid i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.input-field.invalid small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.input-field.valid input{
+    border-color: #2ecc71;
+}
+
+.message-box.invalid input{
+    border-color: #e74c3c;
+}
+
+.message-box.invalid i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.message-box.invalid small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.message-box.valid input{
+    border-color: #2ecc71;
 }

@@ -4,25 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     
     <title>Contact Us</title>
   </head>
-  <body onload='document.form1.email.focus()' onload='document.form1.message.focus()'>    
+  <body>  
     <div class="container">
         <header>GET IN TOUCH</header>
-        <form name="form1" action="#">
+        <form name="form1" action="#" class="form1" id="form1">
             <div class="fields">
                 <div class="input-field">
                     <label>First name*</label>
-                    <input type="text" placeholder="Olivia" required>
+                    <input type="text" placeholder="Olivia" id="firstname" >
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div class="input-field">
-                    <label>Last name</label>
-                    <input type="text" placeholder="Wilson">
+                    <label>Last name*</label>
+                    <input type="text" placeholder="Wilson" id="lastname">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div class="input-field">
                     <label>Email address*</label>
-                    <input type="text" name="email" placeholder="hello@reallygreatsite.com" required>
+                    <input type="text" name="email" placeholder="hello@reallygreatsite.com" id="email" >
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div class="select-box">
                     <label>Project Type</label>
@@ -36,10 +43,16 @@
             </div>
             <div class="message-box">
                 <label>Message*</label>
-                <input type="text" name="message" placeholder="Type your message here" required>
+                <input type="text" name="message" placeholder="Type your message here" id="messagebox" >
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
             </div>
             <div class="button">
-                <input type="submit" value="Submit" onclick="ValidateEmail(document.form1.email);stringlength(document.form1.message,200)">
+                <input type="submit" value="Submit">
+            </div>
+            <div class="alert">
+                <div class="success" id="success">Your message was sent successfully!</div>
+                <div class="error" id="error">Please try again!</div>
             </div>
         </form>
        </div>
