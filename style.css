@@ -23,6 +23,7 @@ body{
     padding: 30px;
     margin: 0 15px;
     background-color: rgb(255, 249, 241);
+    padding-bottom: 0px;
 }
 
 .container header{
@@ -112,6 +113,8 @@ form .button input{
     background-color: rgb(251, 234, 211);
     font-size: 20px;
     font-weight: 500;
+    margin-left: 630px;
+    margin-top: 120px;
 }
 
 .alert{
