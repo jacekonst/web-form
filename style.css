@@ -198,3 +198,19 @@ form .button input{
 .message-box.valid input{
     border-color: #2ecc71;
 }
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .fields .input-field{
+        display: flex;
+        margin: 20px 0 12px 0;
+        width: 100%;
+        flex-direction:column;
+    }
+    .container form .fields{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
